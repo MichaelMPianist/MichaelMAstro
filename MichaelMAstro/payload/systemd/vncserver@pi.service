@@ -1,13 +1,10 @@
 [Unit]
-Description=Start TigerVNC server at startup for user %i
+Description=Start TightVNC server at startup
 After=syslog.target network.target
 
 [Service]
 Type=forking
 User=pi
-PAMName=login
-PIDFile=/home/pi/.vnc/%H:1.pid
-ExecStartPre=-/usr/bin/vncserver -kill :1 > /dev/null 2>&1
 ExecStart=/usr/bin/vncserver :1
 ExecStop=/usr/bin/vncserver -kill :1
 
