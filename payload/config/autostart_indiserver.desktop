@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/pi/scripts/start-indi.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Start INDI Server
+Comment=Start INDI on login
